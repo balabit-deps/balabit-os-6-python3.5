@@ -1,3 +1,9 @@
+python3.5 (3.5.2-2~16.04bb1) xenial; urgency=medium
+
+  * Added hardening-wrapper
+
+ -- Alex <alex@localhost.localdomain>  Thu, 05 Jan 2017 10:56:18 +0100
+
 python3.5 (3.5.2-2~16.04) xenial-proposed; urgency=medium
 
   * SRU: LP: #1620754: Fix invalid code in pyhash/siphash24. Issue #28055.

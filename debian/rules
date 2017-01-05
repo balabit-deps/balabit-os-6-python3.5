@@ -8,6 +8,8 @@ export SHELL = /bin/bash
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+export DEB_BUILD_HARDENING = 1
+
 vafilt		= $(subst $(2)=,,$(filter $(2)=%,$(1)))
 DPKG_VARS	:= $(shell dpkg-architecture)
 DEB_BUILD_ARCH		?= $(call vafilt,$(DPKG_VARS),DEB_BUILD_ARCH)
