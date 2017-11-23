@@ -1,3 +1,40 @@
+python3.5 (3.5.2-2ubuntu0~16.04.4) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: integer overflow in the PyBytes_DecodeEscape
+    function
+    - debian/patches/CVE-2017-1000158.patch: fix this integer overflow
+      in Objects/bytesobject.c.
+    - CVE-2017-1000158
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Thu, 23 Nov 2017 13:37:01 -0300
+
+python3.5 (3.5.2-2ubuntu0~16.04.3) xenial; urgency=medium
+
+  * Explicitly use the system python for byte compilation in postinst scripts.
+    (LP: #1682934)
+
+ -- Brian Murray <brian@ubuntu.com>  Thu, 14 Sep 2017 15:51:06 -0700
+
+python3.5 (3.5.2-2ubuntu0~16.04.2) xenial; urgency=medium
+
+  * SRU: LP: #1711724 Fix dict segfault. Issue #27945.
+
+ -- Clint Byrum <clint@ubuntu.com>  Fri, 18 Aug 2017 10:48:00 -0700
+
+python3.5 (3.5.2-2ubuntu0~16.04.1) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: use of HTTP_PROXY flag supplied by attacker in CGI
+    scripts (aka HTTPOXY attack)
+    - debian/patches/CVE-2016-1000110.patch: if running as CGI
+      script, forget HTTP_PROXY in Lib/urllib.py, add test to
+      Lib/test/test_urllib.py, add documentation.
+    - CVE-2016-1000110
+  * NOTE: backport of 3.5.2 to Ubuntu 16.04 LTS also addresses:
+    - CVE-2016-0772: StartTLS stripping attack
+    - CVE-2016-5636: Integer overflow when handling zipfiles
+
+ -- Steve Beattie <sbeattie@ubuntu.com>  Thu, 17 Nov 2016 09:05:23 -0800
+
 python3.5 (3.5.2-2~16.04) xenial-proposed; urgency=medium
 
   * SRU: LP: #1620754: Fix invalid code in pyhash/siphash24. Issue #28055.
