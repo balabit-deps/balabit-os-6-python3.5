@@ -40,3 +40,6 @@ pydoc-use-pager.diff
 asyncio366.diff
 asyncio-import.diff
 pyhash.diff
+CVE-2016-1000110.diff
+bpo-27945.diff
+CVE-2017-1000158.patch
