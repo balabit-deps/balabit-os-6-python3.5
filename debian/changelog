@@ -1,3 +1,18 @@
+python3.5 (3.5.2-2ubuntu0~16.04.5) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: DoS via catastrophic backtracking
+    - debian/patches/CVE-2018-106x.patch: fix expressions in
+      Lib/difflib.py, Lib/poplib.py. Added tests to
+      Lib/test/test_difflib.py, Lib/test/test_poplib.py.
+    - CVE-2018-1060
+    - CVE-2018-1061
+  * SECURITY UPDATE: incorrect Expat hash salt initialization
+    - debian/patches/CVE-2018-14647.patch: call SetHashSalt in
+      Include/pyexpat.h, Modules/_elementtree.c, Modules/pyexpat.c.
+    - CVE-2018-14647
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 12 Nov 2018 08:43:14 -0500
+
 python3.5 (3.5.2-2ubuntu0~16.04.4bb1) xenial; urgency=medium
 
   * Balabit patched version
