@@ -45,3 +45,12 @@ bpo-27945.diff
 CVE-2017-1000158.patch
 CVE-2018-106x.patch
 CVE-2018-14647.patch
+CVE-2018-20406.patch
+CVE-2019-5010.patch
+CVE-2019-9636.patch
+CVE-2019-9948.patch
+CVE-2019-10160-1.patch
+CVE-2019-10160-2.patch
+issue9146.diff
+CVE-2018-20852.patch
+CVE-2019-9740.patch

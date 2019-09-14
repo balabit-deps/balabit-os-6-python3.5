@@ -1,3 +1,47 @@
+python3.5 (3.5.2-2ubuntu0~16.04.8) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: incorrect cookie domain check
+    - debian/patches/CVE-2018-20852.patch: prefix dot in domain for proper
+      subdomain validation in Lib/http/cookiejar.py,
+      Lib/test/test_http_cookiejar.py.
+    - CVE-2018-20852
+  * SECURITY UPDATE: integer overflow in pickle
+    - debian/patches/CVE-2018-20406.patch: avoid relying on signed overflow
+      in _pickle memos in Modules/_pickle.c.
+    - CVE-2018-20406
+  * SECURITY UPDATE: NULL pointer dereference via X509 certificate
+    - debian/patches/CVE-2019-5010.patch: fix segfault in ssl cert parser
+      in Lib/test/talos-2019-0758.pem, Lib/test/test_ssl.py,
+      Modules/_ssl.c.
+    - CVE-2019-5010
+  * SECURITY UPDATE: improper handling of unicode encoding
+    - debian/patches/CVE-2019-9636.patch: add check for characters in
+      netloc that normalize to separators in Doc/library/urllib.parse.rst,
+      Lib/test/test_urlparse.py, Lib/urllib/parse.py.
+    - CVE-2019-9636
+  * SECURITY UPDATE: HTTP header injection
+    - debian/patches/CVE-2019-9740.patch: disallow control chars in http
+      URLs in Lib/http/client.py, Lib/test/test_urllib.py,
+      Lib/test/test_xmlrpc.py.
+    - CVE-2019-9740
+    - CVE-2019-9947
+  * SECURITY UPDATE: urllib support the local_file: scheme
+    - debian/patches/CVE-2019-9948.patch: disallow file reading in
+      Lib/urllib/request.py, Lib/test/test_urllib.py.
+    - CVE-2019-9948
+  * SECURITY UPDATE: incomplete fix for CVE-2019-9636
+    - debian/patches/CVE-2019-10160-1.patch: fix handling of
+      pre-normalization characters in urlsplit() in
+      Lib/test/test_urlparse.py, Lib/urllib/parse.py.
+    - debian/patches/CVE-2019-10160-2.patch: correct fix to handle
+      decomposition in usernames in Lib/test/test_urlparse.py,
+      Lib/urllib/parse.py.
+    - CVE-2019-10160
+  * debian/patches/issue9146.diff: fix FIPS mode environments where MD5
+    isn't available in Modules/_hashopenssl.c. (LP: #1835135)
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 10 Jul 2019 07:58:48 -0400
+
 python3.5 (3.5.2-2ubuntu0~16.04.5bb1) xenial; urgency=medium
 
   * Balabit patched version
