@@ -1,3 +1,20 @@
+python3.5 (3.5.2-2ubuntu0~16.04.9) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: incorrect email address parsing
+    - debian/patches/CVE-2019-16056.patch: don't parse domains containing @
+      in Lib/email/_header_value_parser.py, Lib/email/_parseaddr.py,
+      Lib/test/test_email/test__header_value_parser.py,
+      Lib/test/test_email/test_email.py.
+    - CVE-2019-16056
+  * SECURITY UPDATE: XSS in documentation XML-RPC server
+    - debian/patches/CVE-2019-16935.patch: escape the server_title in
+      Lib/xmlrpc/server.py, Lib/test/test_docxmlrpc.py.
+    - CVE-2019-16935
+  * debian/patches/avoid_test_docxmlrpc_race.patch: avoid race in
+    test_docxmlrpc server setup in Lib/test/test_docxmlrpc.py.
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 08 Oct 2019 09:06:37 -0400
+
 python3.5 (3.5.2-2ubuntu0~16.04.8bb1) xenial; urgency=medium
 
   * Balabit patched version
