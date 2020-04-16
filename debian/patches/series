@@ -57,3 +57,5 @@ CVE-2019-9740.patch
 CVE-2019-16056.patch
 CVE-2019-16935.patch
 avoid_test_docxmlrpc_race.patch
+CVE-2019-18348.patch
+CVE-2020-8492.patch
