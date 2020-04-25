@@ -1,3 +1,16 @@
+python3.5 (3.5.2-2ubuntu0~16.04.10) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: CRLF injection
+    - debian/patches/CVE-2019-18348.patch: disallow control characters
+      in hostnames in http.client in Lib/http/client.py, Lib/test/test_urllib.py.
+    - CVE-2019-18348
+  * SECURITY UPDATE: Denial of service
+    - debian/patches/CVE-2020-8492.patch: fix the regex to prevent
+      the regex denial of service in Lib/urllib/request.py,
+    - CVE-2020-8492
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Thu, 16 Apr 2020 14:47:17 -0300
+
 python3.5 (3.5.2-2ubuntu0~16.04.9bb1) xenial; urgency=medium
 
   * Balabit patched version
