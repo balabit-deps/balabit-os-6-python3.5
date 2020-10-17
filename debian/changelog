@@ -1,3 +1,16 @@
+python3.5 (3.5.2-2ubuntu0~16.04.12) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: CRLF injection
+    - debian/patches/CVE-2020-26116.patch: prevent header injection
+      in http methods in Lib/httplib.py, Lib/test/test_httlib.py.
+    - CVE-2020-26116
+  * debian/patches/skipping_broken_test_httphandlertest.patch:
+    - skipping Lib/test/test_logging.py was hanging during building time
+      causing the building to be killed after 150 minutes of hang.
+
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 07 Oct 2020 14:19:02 -0300
+
 python3.5 (3.5.2-2ubuntu0~16.04.11bb1) xenial; urgency=medium
 
   * Balabit patched version
