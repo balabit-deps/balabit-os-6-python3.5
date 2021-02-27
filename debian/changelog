@@ -1,3 +1,9 @@
+python3.5 (3.5.2-2ubuntu0~16.04.13bb1) xenial; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 27 Feb 2021 04:27:21 +0100
+
 python3.5 (3.5.2-2ubuntu0~16.04.13) xenial-security; urgency=medium
 
   * SECURITY UPDATE: Code execution from content received via HTTP
