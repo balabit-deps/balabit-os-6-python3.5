@@ -65,3 +65,5 @@ CVE-2019-9674.patch
 CVE-2020-14422.patch
 CVE-2020-26116.patch
 skipping_broken_test_httphandlertest.patch
+CVE-2020-27619.patch
+CVE-2021-3177.patch
